@@ -10,7 +10,7 @@ const { status, signIn, signOut } = useAuth();
 
 const loggedIn = computed(() => status.value === "authenticated");
 async function handleSignIn() {
-  await signIn();
+  await signIn("github");
 }
 async function handleSignOut() {
   await signOut();
