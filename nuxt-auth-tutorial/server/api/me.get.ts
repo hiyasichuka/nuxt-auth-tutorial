@@ -3,8 +3,6 @@ import { getServerSession } from '#auth'
 export default eventHandler(async (event) => {
   const query = await getQuery(event)
 
-  console.log(query.API_SECRET)
-  console.log(process.env.API_SECRET)
   if (query.API_SECRET !== process.env.API_SECRET) {
     throw createError({
       statusCode: 401,
