@@ -1,7 +1,7 @@
 <template>
   <div>
-    <button v-if="loggedIn" @click="handleSignOut">Sign Out</button>
-    <button v-else @click="handleSignIn">Sign In</button>
+    <UIButton v-if="loggedIn" @click="handleSignOut">Sign Out</UIButton>
+    <UIButton v-else @click="handleSignIn">Sign In</UIButton>
   </div>
 </template>
 
