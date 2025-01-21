@@ -19,7 +19,7 @@
     "prisma": "^5.3.1"
   },
   "volta": {
-    "node": "18.18.0"
+    "node": "18.20.6"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.7",
